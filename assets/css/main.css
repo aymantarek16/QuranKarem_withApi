@@ -6,7 +6,6 @@ body {
   font-family: "Baloo Bhaijaan 2", sans-serif;
 }
 
-
 @media (min-width: 768px) {
   .expanded {
     width: 100%;
@@ -15,7 +14,6 @@ body {
     padding: 0px 7%;
   }
 }
-
 
 img {
   width: 100%;
@@ -78,23 +76,6 @@ button.main-button:hover {
   background-color: #2a2a2a;
 }
 
-.shine {
-  color: #fff;
-  animation: blink 2s infinite ease-in-out;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    color: #fff;
-    text-shadow: 0 0 10px #ff565b, 0 0 10px #ff565b;
-  }
-  50% {
-    color: #aaa;
-    text-shadow: none;
-  }
-}
-
 .white-button a {
   text-transform: capitalize;
   font-weight: 400;
@@ -111,6 +92,12 @@ button.main-button:hover {
 .white-button a:hover {
   color: #ffffff;
   background-color: #ff565b;
+}
+
+@media (max-width: 768px) {
+  .white-button a {
+    font-size: 14px;
+  }
 }
 
 section {
@@ -258,8 +245,7 @@ section {
 section.live {
   margin-top: 60px;
   padding: 60px 0px;
-  background-image: 
-  url(https://images.unsplash.com/photo-1605553378313-22d0dc541393?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://images.unsplash.com/photo-1605553378313-22d0dc541393?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -269,5 +255,28 @@ section.live {
   section.live {
     margin-top: 120px;
     padding: 120px 0px;
+  }
+}
+
+section.live video {
+  width: 70%;
+  height: 70%;
+  margin: 0 auto;
+}
+
+section.live .shine {
+  color: #fff;
+  animation: blink 2s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #ff565b, 0 0 10px #ff565b;
+  }
+  50% {
+    color: #aaa;
+    text-shadow: none;
   }
 }
