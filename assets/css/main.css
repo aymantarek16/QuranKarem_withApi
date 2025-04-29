@@ -6,9 +6,6 @@ body {
   font-family: "Baloo Bhaijaan 2", sans-serif;
 }
 
-.expanded {
-  max-width: 1320px;
-}
 
 @media (min-width: 768px) {
   .expanded {
@@ -19,9 +16,6 @@ body {
   }
 }
 
-.accordion-item {
-  border: none;
-}
 
 img {
   width: 100%;
