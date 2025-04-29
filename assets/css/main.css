@@ -1,0 +1,279 @@
+/* ============================== 
+        Global Styles 
+============================== */
+body {
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+.expanded {
+  max-width: 1320px;
+}
+
+@media (min-width: 768px) {
+  .expanded {
+    width: 100%;
+    overflow: hidden;
+    max-width: 100%;
+    padding: 0px 7%;
+  }
+}
+
+.accordion-item {
+  border: none;
+}
+
+img {
+  width: 100%;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  display: inline-block;
+}
+
+p {
+  font-size: 15px;
+  line-height: 28px;
+  color: #7a7a7a;
+}
+
+button.main-button {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff565b;
+  padding: 11px 25px;
+  border-radius: 7.5px;
+  display: inline-block;
+  outline: none;
+  border: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+button.main-button:hover {
+  background-color: #2a2a2a;
+}
+
+.primary-button a {
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #ffffff;
+  background-color: #ff565b;
+  padding: 11px 25px;
+  border-radius: 7.5px;
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.primary-button a:hover {
+  background-color: #2a2a2a;
+}
+
+.shine {
+  color: #fff;
+  animation: blink 2s infinite ease-in-out;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #ff565b, 0 0 10px #ff565b;
+  }
+  50% {
+    color: #aaa;
+    text-shadow: none;
+  }
+}
+
+.white-button a {
+  text-transform: capitalize;
+  font-weight: 400;
+  color: #ff565b;
+  background-color: #ffffff;
+  padding: 11px 25px;
+  margin: 30px 10px 2px;
+  border-radius: 7.5px;
+  display: inline-block;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.white-button a:hover {
+  color: #ffffff;
+  background-color: #ff565b;
+}
+
+section {
+  margin-top: 0px;
+  padding-top: 60px;
+}
+
+@media (min-width: 576px) {
+  section {
+    margin-top: 60px;
+    padding-top: 60px;
+  }
+}
+
+.loader {
+  background-color: #2a2a2a;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 222222;
+}
+
+.loader svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loader svg path,
+.loader svg rect {
+  fill: #ff565b;
+}
+
+/* Header Styles */
+.main-navigation {
+  position: absolute;
+  width: 100%;
+  padding: 0px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.logo {
+  max-width: 120px;
+  position: absolute;
+  top: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    max-width: 100px;
+  }
+}
+
+/* ============================== 
+        Main Section Styles  
+============================== */
+
+.main-banner {
+  background-color: #333;
+  background-image: url(https://images.unsplash.com/photo-1575645513913-c002ea3b2e01?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 170px 0px 270px 0px;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .main-banner {
+    padding: 150px 0px 200px 0px;
+  }
+}
+
+.main-banner h6 {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.main-banner h2 {
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.search-form {
+  margin-top: -150px;
+}
+
+.search-form #search-form {
+  padding: 30px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 7.5px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 576px) {
+  .search-form #search-form {
+    padding: 60px;
+  }
+}
+
+.search-form #search-form label {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  .search-form #search-form label {
+    margin-bottom: 20px;
+  }
+}
+
+.search-form #search-form input,
+.search-form #search-form select {
+  width: 100%;
+  height: 44px;
+  border-radius: 7.5px;
+  border: 1px solid #eeeeee;
+  font-size: 14px;
+  padding: 0px 15px;
+  margin-bottom: 30px;
+}
+
+.search-form #search-form button.main-button {
+  width: 100%;
+}
+
+/* ============================== 
+        Live Section Styles
+============================== */
+section.live {
+  margin-top: 60px;
+  padding: 60px 0px;
+  background-image: 
+  url(https://images.unsplash.com/photo-1605553378313-22d0dc541393?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@media (min-width: 992px) {
+  section.live {
+    margin-top: 120px;
+    padding: 120px 0px;
+  }
+}
