@@ -88,6 +88,7 @@ button.main-button:hover {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+/* Responseve */
 
 .white-button a:hover {
   color: #ffffff;
@@ -262,6 +263,22 @@ section.live video {
   width: 70%;
   height: 70%;
   margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  section.live video {
+    width: 100%;
+    height: 100%;
+  }
+
+  section.live .two_btn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  section.live .two_btn .white-button a {
+   font-size: 16px;
+  }
 }
 
 section.live .shine {
